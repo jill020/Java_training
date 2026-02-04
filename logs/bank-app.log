@@ -1,0 +1,75 @@
+2026-02-04 14:17:35.477 INFO com.bpi.m4act8.BankAccount - Starting BankAccount test sequence...
+2026-02-04 14:17:35.514 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱5000.0
+2026-02-04 14:17:35.518 INFO com.bpi.m4act8.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-02-04 14:17:35.518 INFO com.bpi.m4act8.BankAccount - Deposit succeeded.
+2026-02-04 14:17:35.519 INFO com.bpi.m4act8.BankAccount - Withdrawal requested: ₱3000.0
+2026-02-04 14:17:35.519 INFO com.bpi.m4act8.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-02-04 14:17:35.520 INFO com.bpi.m4act8.BankAccount - Withdrawal succeeded.
+2026-02-04 14:17:35.520 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱-500.0
+2026-02-04 14:17:35.520 ERROR com.bpi.m4act8.BankAccount - Invalid deposit amount: ₱-500.0
+2026-02-04 14:17:35.520 ERROR com.bpi.m4act8.BankAccount - Deposit failed: Deposit amount must be positive
+com.bpi.m4act8.InvalidAmountException: Deposit amount must be positive
+	at HelloWord/com.bpi.m4act8.BankAccount.deposit(BankAccount.java:60)
+	at HelloWord/com.bpi.m4act8.BankAccount.lambda$2(BankAccount.java:87)
+	at HelloWord/com.bpi.m4act8.BankAccount.runTest(BankAccount.java:72)
+	at HelloWord/com.bpi.m4act8.BankAccount.main(BankAccount.java:87)
+2026-02-04 14:17:35.525 INFO com.bpi.m4act8.BankAccount - Withdrawal requested: ₱20000.0
+2026-02-04 14:17:35.525 WARN com.bpi.m4act8.BankAccount - Insufficient funds: ₱12000.0 available, Requested: ₱20000.0
+2026-02-04 14:17:35.529 ERROR com.bpi.m4act8.BankAccount - Withdrawal failed: Insufficient funds for withdrawal | Balance: ₱12000.0, Requested: ₱20000.0
+com.bpi.m4act8.InsufficientFundsException: Insufficient funds for withdrawal | Balance: ₱12000.0, Requested: ₱20000.0
+	at HelloWord/com.bpi.m4act8.BankAccount.withdraw(BankAccount.java:48)
+	at HelloWord/com.bpi.m4act8.BankAccount.lambda$3(BankAccount.java:88)
+	at HelloWord/com.bpi.m4act8.BankAccount.runTest(BankAccount.java:72)
+	at HelloWord/com.bpi.m4act8.BankAccount.main(BankAccount.java:88)
+2026-02-04 14:17:35.530 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱60000.0
+2026-02-04 14:17:35.530 WARN com.bpi.m4act8.BankAccount - Large deposit detected: ₱60000.0 - requires verification
+2026-02-04 14:17:35.530 INFO com.bpi.m4act8.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-02-04 14:17:35.530 INFO com.bpi.m4act8.BankAccount - Deposit succeeded.
+2026-02-04 14:17:35.530 INFO com.bpi.m4act8.BankAccount - Final balance: ₱72000.0
+2026-02-04 14:28:19.546 INFO com.bpi.m4act8.BankAccount - Starting BankAccount test sequence...
+2026-02-04 14:28:19.548 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱5000.0
+2026-02-04 14:28:19.550 INFO com.bpi.m4act8.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-02-04 14:28:19.550 INFO com.bpi.m4act8.BankAccount - Deposit succeeded.
+2026-02-04 14:28:19.550 INFO com.bpi.m4act8.BankAccount - Withdrawal requested: ₱3000.0
+2026-02-04 14:28:19.551 INFO com.bpi.m4act8.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-02-04 14:28:19.551 INFO com.bpi.m4act8.BankAccount - Withdrawal succeeded.
+2026-02-04 14:28:19.551 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱-500.0
+2026-02-04 14:28:19.551 ERROR com.bpi.m4act8.BankAccount - Invalid deposit amount: ₱-500.0
+2026-02-04 14:28:19.552 ERROR com.bpi.m4act8.BankAccount - Deposit failed: Deposit amount must be positive
+com.bpi.m4act8.InvalidAmountException: Deposit amount must be positive
+	at HelloWord/com.bpi.m4act8.BankAccount.deposit(BankAccount.java:60)
+	at HelloWord/com.bpi.m4act8.BankAccount.lambda$2(BankAccount.java:87)
+	at HelloWord/com.bpi.m4act8.BankAccount.runTest(BankAccount.java:72)
+	at HelloWord/com.bpi.m4act8.BankAccount.main(BankAccount.java:87)
+2026-02-04 14:28:19.554 INFO com.bpi.m4act8.BankAccount - Withdrawal requested: ₱20000.0
+2026-02-04 14:28:19.554 WARN com.bpi.m4act8.BankAccount - Insufficient funds: ₱12000.0 available, Requested: ₱20000.0
+2026-02-04 14:28:19.556 ERROR com.bpi.m4act8.BankAccount - Withdrawal failed: Insufficient funds for withdrawal | Balance: ₱12000.0, Requested: ₱20000.0
+com.bpi.m4act8.InsufficientFundsException: Insufficient funds for withdrawal | Balance: ₱12000.0, Requested: ₱20000.0
+	at HelloWord/com.bpi.m4act8.BankAccount.withdraw(BankAccount.java:48)
+	at HelloWord/com.bpi.m4act8.BankAccount.lambda$3(BankAccount.java:88)
+	at HelloWord/com.bpi.m4act8.BankAccount.runTest(BankAccount.java:72)
+	at HelloWord/com.bpi.m4act8.BankAccount.main(BankAccount.java:88)
+2026-02-04 14:28:19.557 INFO com.bpi.m4act8.BankAccount - Deposit requested: ₱60000.0
+2026-02-04 14:28:19.559 WARN com.bpi.m4act8.BankAccount - Large deposit detected: ₱60000.0 - requires verification
+2026-02-04 14:28:19.559 INFO com.bpi.m4act8.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-02-04 14:28:19.559 INFO com.bpi.m4act8.BankAccount - Deposit succeeded.
+2026-02-04 14:28:19.559 INFO com.bpi.m4act8.BankAccount - Final balance: ₱72000.0
+2026-02-04 14:33:47.140 INFO com.bpi.m4project.Library - Book added: Goodnight Moon
+2026-02-04 14:33:47.142 INFO com.bpi.m4project.Library - Book added: Charlotte’s Web
+2026-02-04 14:33:47.142 INFO com.bpi.m4project.Library - Book added: Junie B. Jones Series
+2026-02-04 14:33:47.142 INFO com.bpi.m4project.Library - Book added: Amelia Bedelia Series
+2026-02-04 14:33:47.142 INFO com.bpi.m4project.Library - Book added: The Gruffalo
+2026-02-04 14:36:11.579 INFO com.bpi.m4project.Library - ID: 101 | Title: Goodnight Moon | Author: Margaret Wise Brown
+2026-02-04 14:36:11.580 INFO com.bpi.m4project.Library - ID: 102 | Title: Charlotte’s Web | Author: E. B. White
+2026-02-04 14:36:11.580 INFO com.bpi.m4project.Library - ID: 103 | Title: Junie B. Jones Series | Author: Barbara Park
+2026-02-04 14:36:11.580 INFO com.bpi.m4project.Library - ID: 104 | Title: Amelia Bedelia Series | Author: Peggy Parish
+2026-02-04 14:36:11.580 INFO com.bpi.m4project.Library - ID: 105 | Title: The Gruffalo | Author: Julia Donaldson
+2026-02-04 14:41:42.672 INFO com.bpi.m4project.Library - Available -> Goodnight Moon
+2026-02-04 14:41:42.672 INFO com.bpi.m4project.Library - Available -> Charlotte’s Web
+2026-02-04 14:41:42.672 INFO com.bpi.m4project.Library - Available -> Junie B. Jones Series
+2026-02-04 14:41:42.672 INFO com.bpi.m4project.Library - Available -> Amelia Bedelia Series
+2026-02-04 14:41:42.672 INFO com.bpi.m4project.Library - Available -> The Gruffalo
+2026-02-04 14:41:48.611 INFO com.bpi.m4project.Library - No borrowed books.
+2026-02-04 14:42:06.149 INFO com.bpi.m4project.Library - Jillian borrowed Goodnight Moon
+2026-02-04 14:42:16.026 WARN com.bpi.m4project.Library - Loan ID not found.
+2026-02-04 14:42:29.928 INFO com.bpi.m4project.Library - Borrowed -> Goodnight Moon by Jillian
