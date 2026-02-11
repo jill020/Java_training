@@ -1,0 +1,8 @@
+curl --location 'localhost:4567/movies' \
+--header 'Content-Type: application/json' \
+--data '{
+  "title": "Sample2",
+  "director": "Sample2",
+  "showingDate": "2010-09-01"
+}
+'
