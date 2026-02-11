@@ -1,0 +1,2 @@
+curl --location 'localhost:6789/profiles' \
+--data ''

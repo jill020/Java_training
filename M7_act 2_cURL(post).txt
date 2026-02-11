@@ -1,0 +1,7 @@
+curl --location 'localhost:6789/profiles' \
+--header 'Content-Type: application/json' \
+--data '{
+  "name": "Pepe Rizal",
+  "group": "KKK"
+}
+'

@@ -1,0 +1,7 @@
+curl --location --request PUT 'http://localhost:6789/profiles?name=Andres%20Bonifacio' \
+--header 'Content-Type: application/json' \
+--data '{
+  "name": "Andres Test",
+  "group": "Katipunan"
+}
+'
